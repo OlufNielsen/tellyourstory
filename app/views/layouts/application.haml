@@ -7,4 +7,28 @@
     = csrf_meta_tags
   %body
     %div.innerwrapper
-      = yield
+      %div.header
+        %h1.logo
+          = "<span class=\"white\">fortæl</span><span class=\"blue\">din</span><span class=\"white\">historie</span>".html_safe
+        %nav.main
+          %ul
+            %li
+              %a
+                =link_to "menu1", "#"
+            %li        
+              %a       
+                =link_to "menu1", "#"
+            %li        
+              %a      
+                =link_to "menu1", "#"
+            %li        
+              %a       
+                =link_to "menu1", "#"
+            %li        
+              %a       
+                =link_to "menu1", "#"
+            
+      %div.clear &nbsp;
+      
+      %div.content
+        = yield

@@ -8,6 +8,8 @@
 
 /* Fonts */
 @font-face { font-family: ProximaNova-light; src: url('fonts/ProximaNova-Light.otf'); } /* ProximaNova-light */
+@font-face { font-family: Rockwell; src: url('fonts/Rockwell.otf'); } /* Rockwell */
+
 
 body {
 	background-image: url('background.png');
@@ -28,7 +30,56 @@ a:hover {
 	text-decoration: underline;
 }
 
+.clear {
+	clear: both;
+}
+
 .innerwrapper {
 	width: 960px;
 	margin: 0 auto;
+}
+
+h1.logo {
+	padding-top:2px;
+	margin: 0;
+	float: left;
+	font-size: 22px;
+	font-family "Rockwell";
+}
+h1.logo span {
+	border-top: 2px solid #fff;
+}
+h1.logo span.blue {
+	border-top: 0;
+	color: #4ea7e0;
+	border-bottom: 2px solid #4ea7e0;
+}
+
+nav.main {
+	float: right;
+}
+
+nav.main ul {
+	padding: 0;
+	margin:0;
+}
+
+nav.main ul li {
+	float: left;
+	padding-left: 30px;
+	list-style:none;
+	border-top: 2px #fff solid;
+}
+nav.main ul li:hover{
+	border-top: 2px #4ea7e0 solid;
+}
+nav.main ul li:nth-child(1) {
+}
+
+nav.main ul li a {
+	color: #FFF;
+}
+
+nav.main ul li a:hover {
+	color: #4ea7e0;
 }
