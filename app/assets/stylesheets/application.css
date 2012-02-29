@@ -5,3 +5,30 @@
  *= require_self
  *= require_tree . 
 */
+
+/* Fonts */
+@font-face { font-family: ProximaNova-light; src: url('fonts/ProximaNova-Light.otf'); } /* ProximaNova-light */
+
+body {
+	background-image: url('background.png');
+	
+	/* Standard font settings */
+	font-size: 11px;
+	font-family: "ProximaNova-light";
+	line-height: 18px;
+	color: #FFFFFF;
+}
+
+a {
+	color: #4ea7e0;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.innerwrapper {
+	width: 960px;
+	margin: 0 auto;
+}
