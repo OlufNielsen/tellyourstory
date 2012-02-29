@@ -9,7 +9,7 @@
     %div.innerwrapper
       %div.header
         %h1.logo
-          = "<span class=\"white\">fortæl</span><span class=\"blue\">din</span><span class=\"white\">historie</span>".html_safe
+          = link_to"<span class=\"white\">fortæl</span><span class=\"blue\">din</span><span class=\"white\">historie</span>".html_safe, root_url
         %nav.main
           %ul
             %li
@@ -30,7 +30,18 @@
             
       %div.clear &nbsp;
       
-      %div.splitter
+      %span.tag.green       Svigtet
+      %span.tag.orange      Svigtet
+      %span.tag.redorange   Svigtet
+      %span.tag.darkblue    Svigtet
+      %span.tag.darkgreen   Svigtet
+      %span.tag.purple      Svigtet
+      %span.tag.lightbrown  Svigtet
       
+      
+      
+    %div.splitter
+      
+    %div.innerwrapper
       %div.content
         = yield

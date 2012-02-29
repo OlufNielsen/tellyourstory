@@ -8,7 +8,8 @@
 
 /* Fonts */
 @font-face { font-family: ProximaNova-light; src: url('fonts/ProximaNova-Light.otf'); } /* ProximaNova-light */
-@font-face { font-family: Rockwell; src: url('fonts/Rockwell.otf'); } /* Rockwell */
+@font-face { font-family: ProximaNova-semibold; src: url('fonts/ProximaNova-Semibold.otf'); } /* ProximaNova-semibold */
+@font-face { font-family: Rockwell; src: url('fonts/Rockwell.ttf'); } /* Rockwell */
 
 
 body {
@@ -35,7 +36,7 @@ a:hover {
 }
 
 .splitter {
-	width: 960px;
+	width: 100%;
 	border-top: #272727 1px solid;
 	border-bottom: #464646 1px solid;
 	margin-bottom: 20px;
@@ -52,7 +53,11 @@ h1.logo {
 	margin: 0;
 	float: left;
 	font-size: 22px;
-	font-family "Rockwell";
+	font-family: "Rockwell";
+}
+h1.logo a {
+	color: #FFF;
+	text-decoration: none;
 }
 h1.logo span {
 	border-top: 2px solid #fff;
@@ -61,6 +66,15 @@ h1.logo span.blue {
 	border-top: 0;
 	color: #4ea7e0;
 	border-bottom: 2px solid #4ea7e0;
+}
+
+h2 {
+	font-family: "ProximaNova-semibold";
+	margin-bottom: 2px;
+}
+
+p {
+	margin: 0;
 }
 
 nav.main {
@@ -91,3 +105,18 @@ nav.main ul li a {
 nav.main ul li a:hover {
 	color: #4ea7e0;
 }
+
+/* Tags */
+span.tag {
+	padding: 3px 4px;
+	border-radius: 3px;
+}
+
+/* Colors */
+span.tag.green 			{ background: #798c20; } /* Green */
+span.tag.orange 		{ background: #c48d22; } /* Orange */
+span.tag.redorange 	{ background: #c44c22; } /* Red - orange */
+span.tag.darkblue 	{ background: #1a5b89; } /* Darkblue */
+span.tag.darkgreen 	{ background: #505927; } /* Darkgreen */
+span.tag.purple 		{ background: #5d2d69; } /* Purple */
+span.tag.lightbrown	{ background: #514638; } /* Lightbrown */
