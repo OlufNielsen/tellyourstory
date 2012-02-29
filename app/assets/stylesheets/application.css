@@ -109,7 +109,11 @@ nav.main ul li a:hover {
 /* Tags */
 span.tag {
 	padding: 3px 4px;
+	margin-right: 10px;
 	border-radius: 3px;
+}
+section.tags {
+	margin-bottom: 20px;
 }
 
 /* Colors */
@@ -120,3 +124,4 @@ span.tag.darkblue 	{ background: #1a5b89; } /* Darkblue */
 span.tag.darkgreen 	{ background: #505927; } /* Darkgreen */
 span.tag.purple 		{ background: #5d2d69; } /* Purple */
 span.tag.lightbrown	{ background: #514638; } /* Lightbrown */
+span.tag.bluepurple	{ background: #002555; } /* Blue - Purple */
