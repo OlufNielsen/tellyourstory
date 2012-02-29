@@ -1,7 +1,10 @@
 %section.tags
+  %span{:class => "tag red"} 
+    = link_to "Alle", root_path
+  
   - @tags.each do |tag|
     = render "tags", :tag => tag
   
 %section
 - @stories.each do |story| 
-  = render "imagecard", :story => story
+  = render "imagecard", :story => story 

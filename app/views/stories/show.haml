@@ -1,0 +1,5 @@
+%section{:style => "width: 650px"}
+  - for tag in @story.tags
+    = render "tags", :tag => tag
+  %div.clear
+  = @story.body

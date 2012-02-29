@@ -8,6 +8,7 @@
 
 /* Fonts */
 @font-face { font-family: ProximaNova-light; src: url('fonts/ProximaNova-Light.otf'); } /* ProximaNova-light */
+@font-face { font-family: ProximaNova-lightitallic; src: url('fonts/ProximaNova-LightItalic.otf'); } /* ProximaNova-lightitallic */
 @font-face { font-family: ProximaNova-semibold; src: url('fonts/ProximaNova-Semibold.otf'); } /* ProximaNova-semibold */
 @font-face { font-family: Rockwell; src: url('fonts/Rockwell.ttf'); } /* Rockwell */
 
@@ -51,6 +52,7 @@ a:hover {
 h1.logo {
 	padding-top:2px;
 	margin: 0;
+	margin-top: 20px;
 	float: left;
 	font-size: 22px;
 	font-family: "Rockwell";
@@ -79,6 +81,7 @@ p {
 
 nav.main {
 	float: right;
+	margin-top: 16px;
 }
 
 nav.main ul {
@@ -112,11 +115,17 @@ span.tag {
 	margin-right: 10px;
 	border-radius: 3px;
 }
+span.tag a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+
 section.tags {
 	margin-bottom: 20px;
 }
 
-/* Colors */
+/* Tag Colors */
 span.tag.green 			{ background: #798c20; } /* Green */
 span.tag.orange 		{ background: #c48d22; } /* Orange */
 span.tag.redorange 	{ background: #c44c22; } /* Red - orange */
@@ -125,3 +134,6 @@ span.tag.darkgreen 	{ background: #505927; } /* Darkgreen */
 span.tag.purple 		{ background: #5d2d69; } /* Purple */
 span.tag.lightbrown	{ background: #514638; } /* Lightbrown */
 span.tag.bluepurple	{ background: #002555; } /* Blue - Purple */
+span.tag.red 				{ background: #aa2323; } /* red */
+span.tag.lightred		{ background: #cf7676; } /* Lightred */
+span.tag.darkred		{ background: #651212; } /* Darkred */

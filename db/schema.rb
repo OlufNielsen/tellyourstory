@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120229075954) do
+ActiveRecord::Schema.define(:version => 20120229212712) do
 
   create_table "stories", :force => true do |t|
     t.string   "title"
@@ -19,6 +19,21 @@ ActiveRecord::Schema.define(:version => 20120229075954) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "story_tags", :force => true do |t|
+    t.integer  "story_id"
+    t.integer  "tag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.string   "color"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "slug"
   end
 
   create_table "users", :force => true do |t|

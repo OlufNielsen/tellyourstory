@@ -1,0 +1,11 @@
+%div#imagecard
+  = link_to(image_tag("portraits/1.png", :width => "250px", :height => "200px"), show_story_path(story))
+  - for tag in story.tags
+    = render "tags", :tag => tag
+  %h2
+    = link_to story.title, show_story_path(story)
+  %p.byline
+    = "Af Mia Stødten"
+  %p 
+    = truncate(story.body, :length => 260, :separator => ' ', :omission => '')
+    = link_to " .. Læs mere af Mia's historie her!", "#"
